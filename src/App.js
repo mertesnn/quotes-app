@@ -37,9 +37,9 @@ const App = () => {
   }
 
   const authorChange = (e) => {
-    if (e.currentTarget.value != 0) {
+    if (e.currentTarget.value !== 0) {
       let authors = [];
-      quotes.map((id) => {
+      quotes.forEach((id) => {
         if (id.author === e.currentTarget.value)
           authors.push(id);
       });
