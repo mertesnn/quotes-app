@@ -37,7 +37,7 @@ const App = () => {
   }
 
   const authorChange = (e) => {
-    if (e.currentTarget.value !== 0) {
+    if (e.currentTarget.value !== "0") {
       let authors = [];
       quotes.forEach((id) => {
         if (id.author === e.currentTarget.value)
@@ -70,7 +70,7 @@ const App = () => {
       />
       <OutCardCircles />
       <div className="social">
-        <a href="https://github.com/mertesnn/" target="_blank">
+        <a href="https://github.com/mertesnn/" target="_blank" rel="noreferrer">
           <i className="fab fa-github"></i>
         </a>
       </div>
